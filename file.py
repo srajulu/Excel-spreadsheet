@@ -24,3 +24,8 @@ def process_workbook(filename):
 		 max_row=sheet.max_row, 
 		 min_col=4, 
        		 min_col=4)
+		
+		chart = BarChart()
+		chart.add_data(values)
+		sheet.add_chart(chart, 'e2')
+
